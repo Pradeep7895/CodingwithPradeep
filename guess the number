@@ -1,0 +1,15 @@
+import random
+n=random.randint(1,100)
+
+name=input('Enter your name:')
+
+while True:
+    
+    guess=int(input('Guess the number(between 1 and 100:)'))
+    if guess==n:
+            print('Congrats,you guess the number')
+            break
+    elif guess<n:
+            print('the number is higher than your guess.Please try again')
+    elif guess>n:
+            print('the number is lower than your guess.Please try again')
