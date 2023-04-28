@@ -1,0 +1,11 @@
+import random
+val=random.random()
+print('Enter how many digits otp you want 4 digit or 6 digit: ')
+number=int(input())
+if number==4:
+   otp=str(val)[-4:]
+   print(otp)
+elif number==6:
+    otp=str(val)[-6:]
+    print(otp)
+    
